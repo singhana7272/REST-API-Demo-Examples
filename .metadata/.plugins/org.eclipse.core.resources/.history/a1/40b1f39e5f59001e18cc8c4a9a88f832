@@ -1,0 +1,5 @@
+package com.anamika.resource;
+
+public class FactorialResource {
+
+}

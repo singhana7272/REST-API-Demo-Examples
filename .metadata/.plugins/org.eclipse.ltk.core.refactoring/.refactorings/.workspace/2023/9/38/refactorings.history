@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;factorial-rest-api-demo-project-1&apos; to &apos;factorial-rest-api-demo-project&apos;&#x0D;&#x0A;- Original element: &apos;factorial-rest-api-demo-project-1&apos;&#x0D;&#x0A;- Renamed element: &apos;factorial-rest-api-demo-project-1&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;factorial-rest-api-demo-project-1&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=factorial-rest-api-demo-project-1" name="factorial-rest-api-demo-project" references="true" stamp="1695397095308" version="1.0"/>
+</session>
