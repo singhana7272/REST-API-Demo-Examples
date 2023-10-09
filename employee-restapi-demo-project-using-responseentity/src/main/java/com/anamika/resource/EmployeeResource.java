@@ -34,7 +34,7 @@ public class EmployeeResource {
 		return new ResponseEntity<ArrayList<Employee>>(employees, HttpStatus.OK);
 	}
 
-	@GetMapping(path = "/employees/{empId}", produces = MediaType.APPLICATION_JSON_VALUE)
+	/*@GetMapping(path = "/employees/{empId}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Employee> getEmployeeByIdResource(@PathVariable("empId") int id) {
 		Employee employee = null;
 		try {
@@ -45,6 +45,15 @@ public class EmployeeResource {
 		}
 
 	}
+	*/
+	
+	@GetMapping(path = "/employees/{empId}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Employee getEmployeeByIdResource(@PathVariable("empId") int id) {
+		 Employee employee = employeeService.searchEmployee(id);
+		return employee;
+		
+	}
+
 
 	@PostMapping(path = "/employees", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Employee> insertEmployeeResource(@RequestBody Employee employee) {
